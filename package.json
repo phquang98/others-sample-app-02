@@ -71,11 +71,15 @@
     }
   },
   "lint-staged": {
-    "./src/**/*.ts": [
+    "./src/**/*.{ts,tsx}": [
       "npx eslint --max-warnings 100 --cache --fix",
       "npx prettier --write"
     ],
-    "./src/index.ts": [
+    "./src/index.{ts,tsx}": [
+      "npx eslint --max-warnings 100 --cache --fix",
+      "npx prettier --write"
+    ],
+    "./src/App.{ts,tsx}": [
       "npx eslint --max-warnings 100 --cache --fix",
       "npx prettier --write"
     ]
