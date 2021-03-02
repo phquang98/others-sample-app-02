@@ -79,7 +79,7 @@
       "npx eslint --max-warnings 100 --cache --fix",
       "npx prettier --write"
     ],
-    "./src/App.{ts,tsx}": [
+    "./src/App.tsx": [
       "npx eslint --max-warnings 100 --cache --fix",
       "npx prettier --write"
     ]
