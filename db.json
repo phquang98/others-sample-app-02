@@ -1,0 +1,45 @@
+{
+  "participants": [
+    {
+      "id": 1,
+      "participantId": "e123456",
+      "fullName": "John Doe",
+      "address": "123 Long Street",
+      "assignment1": 6,
+      "assignment2": 7,
+      "exam": 8
+    },
+    {
+      "id": 2,
+      "participantId": "e213009",
+      "fullName": "Jane Dean",
+      "address": "456 Short Street",
+      "assignment1": 8,
+      "assignment2": 5,
+      "exam": 9
+    },
+    {
+      "id": 3,
+      "participantId": "e122470",
+      "fullName": "Jimmy Dawn",
+      "address": "789 Medium Street",
+      "assignment1": 3,
+      "assignment2": 5,
+      "exam": 10
+    }
+  ],
+  "courses": [
+    {
+      "courseId": "FE001",
+      "name": "Front End Development",
+      "description": "This course teaches you about front end development.",
+      "assignments": 3
+    },
+    {
+      "courseId": "BE001",
+      "name": "Back End Development",
+      "description": "This course teaches you about back end development.",
+      "assignments": 5
+    }
+  ]
+}

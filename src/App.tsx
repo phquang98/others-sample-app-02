@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { FC } from "react";
+import { Admin, Resource } from "react-admin";
+import dontCareHeaderRestProvider from "ra-data-json-server";
 
-function App() {
+import { ParticipantList as PartList } from "./components/Participant/ParticipantList";
+import ParticipantCreate from "./components/Participant/ParticipantCreate";
+import ParticipantEdit from "./components/Participant/ParticipantEdit";
+
+const App: FC = () => {
+  const anotherProvider = dontCareHeaderRestProvider("http://localhost:10123");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Admin dataProvider={anotherProvider}>
+      <Resource name="participants" list={PartList} create={ParticipantCreate} edit={ParticipantEdit} />
+    </Admin>
   );
-}
+};
 
 export default App;
