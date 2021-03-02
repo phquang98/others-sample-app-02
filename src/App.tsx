@@ -8,7 +8,7 @@ import ParticipantEdit from "./components/Participant/ParticipantEdit";
 
 // checking running lint staged
 // testing
-const asd = 10;
+const noVer5 = true;
 
 const App: FC = () => {
   const anotherProvider = dontCareHeaderRestProvider("http://localhost:10123");
