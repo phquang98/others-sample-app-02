@@ -4,11 +4,18 @@ This app is for student management.
 
 ## Notes
 
-- `frontend`: gives the visual views to interact
-  - setup the envi with react-ts and some code configs
-  - adding react admin: `npm i react-admin ra-data-simple-rest @material-ui/core`
-- `backend`: handles the logic of reading data from Excel, uploads data to DB
-  - `json-server`: use just to tesr REST API and data manipulating
+- `frontend`:
+  - show participants and courses
+  - can add/delete/edit on both resources
+  - authenticate and store related data in local storage
+- `backend`:
+  - read data from `.xlsx` files
+  - outputs data in JSON format for FE to use
+    - changes JSON keys to "friendlier" keys name (e.g Full Name -> fullName)
+  - transform actions from FE to CRUD operations
+  - connect to MySQL DB for CRUD operation
+    - have schema from TypeORM
+    - have to write manual SQL query
 
 ## Fake data
 

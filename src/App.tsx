@@ -6,10 +6,6 @@ import { ParticipantList as PartList } from "./components/Participant/Participan
 import ParticipantCreate from "./components/Participant/ParticipantCreate";
 import ParticipantEdit from "./components/Participant/ParticipantEdit";
 
-// checking running lint staged
-// testing
-const noVer5 = true;
-
 const App: FC = () => {
   const anotherProvider = dontCareHeaderRestProvider("http://localhost:10123");
 
